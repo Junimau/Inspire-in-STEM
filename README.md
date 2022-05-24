@@ -15,3 +15,5 @@ loops for (variable) in (variable)- (no brackets) loops items in list
 ##WEEK 5 :design thinking ,ux ,ui
 
 ##WEEK 6 :Pitch competition ,campus tour
+![capture](./images/Capture.PNG)
+
