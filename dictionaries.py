@@ -34,6 +34,20 @@ print(person)
 #print(phone_no['home_number'])
 
 #looping over dictionaries
-for key, value in person.item():
-    print(f"(key):(value)")
+#for key, value in person.items():
+ #  print(f"(key):(value)")
+
+print(person.get ('password','the location key is non-existent'))
+
+#returning a dictionary from a function
+def create_full_name(f_name,s_name):
+    person ={'first':f_name,
+             'second':s_name}
+    return person
+student=create_full_name('derrick','kiptoo')
+print (student)
+
+
+
+
 
