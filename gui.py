@@ -33,25 +33,13 @@ canvas = Canvas(
 )
 
 canvas.place(x = 0, y = 0)
-entry_image_1 = PhotoImage(
-    file=relative_to_assets("entry_1.png")
-)
-entry_bg_1 = canvas.create_image(
-    350.0,
-    52.0,
-    image=entry_image_1
-)
-entry_1 = Text(
-    bd=0,
-    bg="#F5F5F5",
-    highlightthickness=0
-)
-entry_1.place(
-    x=154.0,
-    y=29.0,
-    width=392.0,
-    height=44.0
-)
+canvas.create_rectangle(
+    154.0,
+    29.0,
+    546.0,
+    75.0,
+    fill="#000000",
+    outline="")
 
 canvas.create_text(
     177.0,
@@ -116,12 +104,32 @@ canvas.create_text(
     font=("Inter", 20 * -1)
 )
 
+entry_image_1 = PhotoImage(
+    file=relative_to_assets("entry_1.png")
+)
+entry_bg_1 = canvas.create_image(
+    341.5,
+    146.0,
+    image=entry_image_1
+)
+entry_1 = Entry(
+    bd=0,
+    bg="#D9D9D9",
+    highlightthickness=0
+)
+entry_1.place(
+    x=204.0,
+    y=132.0,
+    width=275.0,
+    height=26.0
+)
+
 entry_image_2 = PhotoImage(
     file=relative_to_assets("entry_2.png")
 )
 entry_bg_2 = canvas.create_image(
     341.5,
-    146.0,
+    340.0,
     image=entry_image_2
 )
 entry_2 = Entry(
@@ -131,7 +139,7 @@ entry_2 = Entry(
 )
 entry_2.place(
     x=204.0,
-    y=132.0,
+    y=326.0,
     width=275.0,
     height=26.0
 )
@@ -141,7 +149,7 @@ entry_image_3 = PhotoImage(
 )
 entry_bg_3 = canvas.create_image(
     341.5,
-    340.0,
+    296.0,
     image=entry_image_3
 )
 entry_3 = Entry(
@@ -151,7 +159,7 @@ entry_3 = Entry(
 )
 entry_3.place(
     x=204.0,
-    y=326.0,
+    y=282.0,
     width=275.0,
     height=26.0
 )
@@ -161,7 +169,7 @@ entry_image_4 = PhotoImage(
 )
 entry_bg_4 = canvas.create_image(
     341.5,
-    296.0,
+    245.0,
     image=entry_image_4
 )
 entry_4 = Entry(
@@ -171,7 +179,7 @@ entry_4 = Entry(
 )
 entry_4.place(
     x=204.0,
-    y=282.0,
+    y=231.0,
     width=275.0,
     height=26.0
 )
@@ -181,7 +189,7 @@ entry_image_5 = PhotoImage(
 )
 entry_bg_5 = canvas.create_image(
     341.5,
-    245.0,
+    198.0,
     image=entry_image_5
 )
 entry_5 = Entry(
@@ -190,26 +198,6 @@ entry_5 = Entry(
     highlightthickness=0
 )
 entry_5.place(
-    x=204.0,
-    y=231.0,
-    width=275.0,
-    height=26.0
-)
-
-entry_image_6 = PhotoImage(
-    file=relative_to_assets("entry_6.png")
-)
-entry_bg_6 = canvas.create_image(
-    341.5,
-    198.0,
-    image=entry_image_6
-)
-entry_6 = Entry(
-    bd=0,
-    bg="#D9D9D9",
-    highlightthickness=0
-)
-entry_6.place(
     x=204.0,
     y=184.0,
     width=275.0,
